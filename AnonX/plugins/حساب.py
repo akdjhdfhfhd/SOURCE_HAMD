@@ -2,7 +2,7 @@ import asyncio
 import pyrogram
 import random
 import datetime
-from AnonX import app
+from YukkiMusic import app
 from pyrogram import Client
 from pyrogram import filters
 from pyrogram.types import Message
@@ -17,12 +17,12 @@ from pyrogram.types import (InlineKeyboardButton,
 
 
 
-@app.on_message(filters.regex(r'"حساب العمر"٫"العمر"'))
+@app.on_message(filters.regex(r'حساب العمر'))
 async def calculate_age(client, message):
     try:
         birth_date = datetime.datetime.strptime(message.text.split(" ")[2], "%d-%m-%Y")
     except:
-        await message.reply_text("خطأ عزيزي برجاء ادخال تاريخ ميلادك بهذه الصيغه مثال - ( 1994-1-1 )")
+        await message.reply_text("خطأ عزيزي برجاء ادخال تاريخ ميلادك بهذه الصيغه مثال - ( 2003-4-1 )")
         return
 
     today = datetime.datetime.today()
@@ -34,4 +34,4 @@ async def calculate_age(client, message):
         next_birthday = datetime.datetime(today.year+1, birth_date.month, birth_date.day)
     remaining_days = (next_birthday - today).days
 
-    await message.reply_text(f" • عمرك هو >> {age} سنه\n\n  •عمرك ب الاشهر >> {months} شهر \n\n  •عمرك ب الايام >> {days} يوم.\n\n  •عيد ميلادك بعد >> {remaining_days} يوم.")
+    await message.reply_text(f" ※ عمرك هو >> {age} سنه\n\n  ※عمرك ب الاشهر >> {months} شهر \n\n  ※عمرك ب الايام >> {days} يوم.\n\n  ※عيد ميلادك بعد >> {remaining_days} يوم.")
