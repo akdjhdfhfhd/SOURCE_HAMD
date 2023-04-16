@@ -77,7 +77,7 @@ async def khalid(client: Client, message: Message):
     async for photo in client.iter_profile_photos(message.from_user.id, limit=1):
                     await message.reply_text( 
                     f"""انت {message.from_user.mention} روح قلبي .""",
-        reply_markup=InlineKeyboardMarkup(
+                    reply_markup=InlineKeyboardMarkup(
                 ],
             ]
         )
