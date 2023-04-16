@@ -78,9 +78,9 @@ async def khalid(client: Client, message: Message):
                     await message.reply_text( 
                     f"""انت {message.from_user.mention} روح قلبي .""",
         reply_markup=InlineKeyboardMarkup(
-                ]
+                ],
             ]
-        ),
+        )
     )
 
 @app.on_message(
@@ -93,9 +93,9 @@ async def khalid(client: Client, message: Message):
         photo=f"https://telegra.ph/file/d1f75386af9cf775c0c52.jpg",
         caption=f""" 🐉 | يـوزرڪ : [ @{user} ] \n✓ """,
         reply_markup=InlineKeyboardMarkup(
-                ]
+                ],
             ]
-        ),
+        )
     ) 
     
     
