@@ -169,10 +169,10 @@ async def ihd(client: Client, message: Message):
         )
     )
 
-@app.on_message(command(["فيلم", "فيلمك. 🎥"]))
+@app.on_message(command(["غ","غغ"]))
 async def ihd(client: Client, message: Message):
     rl = random.randint(1,50)
-    url = f"https://t.me/gyigkk/{rl}"
+    url = f"https://t.me/bsmaatt/{rl}"
     await client.send_audio(message.chat.id,url,caption="🐉 ¦ تـم اختيـار فيلم لـك",parse_mode="html",
     reply_markup=InlineKeyboardMarkup(
             [
