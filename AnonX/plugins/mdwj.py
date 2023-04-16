@@ -68,13 +68,13 @@ async def telegraph(client: Client, message: Message):
 async def hshs(client: Client, message: Message):      
     usr = await client.get_users(message.reply_to_message.from_user.id)
     name = usr.first_name#
-    user_id = message.reply_to_message.from_user.id#
-    chat_idd = message.chat.id#
-    chat_username = f"@{message.chat.username}" #
-    chat_name = message.chat.title#
-    username = f"@{message.reply_to_message.from_user.username}"#
+    user_id = message.reply_to_message.from_user.id
+    chat_idd = message.chat.id
+    chat_username = f"@{message.chat.username}"
+    chat_name = message.chat.title
+    username = f"@{message.reply_to_message.from_user.username}"
     async for photo in client.iter_profile_photos(message.reply_to_message.from_user.id, limit=1):
-                    await message.reply_photo(photo.file_id,       caption=f"""**[★⌞ ѕᴏụʀᴄᴇ ᴀʟᴍᴏʀᴛᴀɢᴇʟ ⌝˹⚡˼⁩](https://t.me/AlmortagelTech)\n\n🐉 ¦ ɴᴀᴍᴇ : {name}\n🤡 ¦ ᴜѕᴇ : {username}\n🔥 ¦ ɪᴅ : `{user_id}`\n🔅 ¦ ɪᴅ ᴄʜᴀᴛ : `{chat_idd}`\n💭 ¦ ᴄʜᴀᴛ : {chat_name}\n🐊 ¦ ɢʀᴏᴜᴘ : {chat_username} \n**""", 
+                    await message.reply_photo(photo.file_id,       caption=f"""**[𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳⁩](https://t.me/ah05v)\n\n🐉 ¦ ɴᴀᴍᴇ : {name}\n🤡 ¦ ᴜѕᴇ : {username}\n🔥 ¦ ɪᴅ : `{user_id}`\n🔅 ¦ ɪᴅ ᴄʜᴀᴛ : `{chat_idd}`\n💭 ¦ ᴄʜᴀᴛ : {chat_name}\n🐊 ¦ ɢʀᴏᴜᴘ : {chat_username} \n**""", 
         reply_markup=InlineKeyboardMarkup(
             [
                 [
