@@ -35,8 +35,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         bar = "—————————◉"
 
 
-    buttons = [
-        [
+      
 def stream_markup_timer(_, videoid, chat_id, played, dur):
     bar = random.choice(selections)
     buttons = [
