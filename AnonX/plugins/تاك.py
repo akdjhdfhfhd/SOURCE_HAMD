@@ -33,7 +33,7 @@ from pyrogram.errors import FloodWait
 
 
 
-@app.on_message(command(["المالك", "صاحب الخرابه", "المنشي"]) & filters.group)
+@app.on_message(command(["المالك" , "المنشئ"]) & filters.group)
 async def gak_owne(client: Client, message: Message):
       if len(message.command) >= 2:
          return 
