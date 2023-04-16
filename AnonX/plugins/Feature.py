@@ -95,10 +95,10 @@ async def mmmezat(client, message):
             [
                 [
                     InlineKeyboardButton(
-                        "𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳", url=f"https://t.me/ah07v"),                        
+                        "𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳", url=f"https://t.me/ah05v"),                        
                  ],[
                 InlineKeyboardButton(
-                        "close", callback_data="close"),
+                        "☆ اغلاق ☆", callback_data="close"),
                ],
           ]
         ),
