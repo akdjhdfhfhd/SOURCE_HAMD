@@ -17,7 +17,7 @@ from pyrogram.types import (InlineKeyboardButton,
 
 
 
-@app.on_message(filters.regex(r'حساب العمر'))
+@app.on_message(filters.regex(r'"حساب العمر"٫"العمر"'))
 async def calculate_age(client, message):
     try:
         birth_date = datetime.datetime.strptime(message.text.split(" ")[2], "%d-%m-%Y")
