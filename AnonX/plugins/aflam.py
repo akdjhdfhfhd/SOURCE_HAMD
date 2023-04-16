@@ -55,7 +55,7 @@ async def aflamAR2(c: Client, m: CallbackQuery):
         [InlineKeyboardButton("مسلسلات 📼", callback_data="moslsl " + str(m.from_user.id))],
         [InlineKeyboardButton("مسرحيات 🎭 ", callback_data="msrahia " + str(m.from_user.id))],
 
-        [InlineKeyboardButton("𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳", url=f"https://t.me/ah07v")],
+        [InlineKeyboardButton("𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳", url=f"https://t.me/ah05v")],
 
     ])
     await m.message.edit_text("◍ اهلا بيك في قائمة الافلام والمسلسلات العربيه\n√", reply_markup=keyboard)
