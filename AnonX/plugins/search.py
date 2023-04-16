@@ -1,10 +1,10 @@
-#AFYONA @ww_2_2
+#𝑌.𝑂²¹ ͢͢➛ℍ𝗺!ِٰ𝗱♪ @ah_2_v
 
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from youtube_search import YoutubeSearch
 
-from YukkiMusic import app
+from AnonX import app
 
 
 @app.on_message(filters.command(["search"]) | filters.command(["بحث","ب"],prefixes= ["/", "!","","#"]))
