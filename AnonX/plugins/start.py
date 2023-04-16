@@ -30,8 +30,6 @@ from AnonX.utils.inline import (help_pannel, private_panel,
 loop = asyncio.get_running_loop()
 
 
-REPLY_MESSAGE = "**صلي علي اشرف خلق الله 🥹✨**"
-
 @app.on_message(
     filters.command(get_command("START_COMMAND"))
     & filters.private
