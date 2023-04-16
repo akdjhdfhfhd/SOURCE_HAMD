@@ -2,7 +2,7 @@
         [InlineKeyboardButton("◁", callback_data="Yrw1 " + str(m.from_user.id))],
         [InlineKeyboardButton(" التالي", callback_data="Yrw3 " + str(m.from_user.id))],
         [InlineKeyboardButton("𝗁᥆ꪔᥱ", callback_data="moslsl " + str(m.from_user.id))],
-        [InlineKeyboardButton("⌞ ᥉᥆υᖇᥴᥱ ᥲ️ᖇꪀ᥆ρ⌝", url=f"https://t.me/N_G_12")],
+        [InlineKeyboardButton("𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳", url=f"https://t.me/ah05v")],
 """
 
 import asyncio
@@ -11,7 +11,7 @@ from strings import get_command
 from strings.filters import command
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message, CallbackQuery
-from YukkiMusic import app
+from AnonX import app
 
 
 
@@ -36,7 +36,7 @@ async def aflamAR(c: Client, m: Message):
         [InlineKeyboardButton("مسلسلات 📼", callback_data="moslsl " + str(m.from_user.id))],
         [InlineKeyboardButton("مسرحيات 🎭 ", callback_data="msrahia " + str(m.from_user.id))],
 
-        [InlineKeyboardButton("⌞ ᥉᥆υᖇᥴᥱ ᥲ️ᖇꪀ᥆ρ⌝", url=f"https://t.me/N_G_12")],
+        [InlineKeyboardButton("𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳", url=f"https://t.me/ah05v")],
 
     ])
     await m.reply_text("◍ اهلا بيك في قائمة الافلام والمسلسلات العربيه\n√", reply_markup=keyboard)
@@ -55,7 +55,7 @@ async def aflamAR2(c: Client, m: CallbackQuery):
         [InlineKeyboardButton("مسلسلات 📼", callback_data="moslsl " + str(m.from_user.id))],
         [InlineKeyboardButton("مسرحيات 🎭 ", callback_data="msrahia " + str(m.from_user.id))],
 
-        [InlineKeyboardButton("⌞ ᥉᥆υᖇᥴᥱ ᥲ️ᖇꪀ᥆ρ⌝", url=f"https://t.me/N_G_12")],
+        [InlineKeyboardButton("𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳", url=f"https://t.me/ah05v")],
 
     ])
     await m.message.edit_text("◍ اهلا بيك في قائمة الافلام والمسلسلات العربيه\n√", reply_markup=keyboard)
@@ -74,7 +74,7 @@ async def film(c: Client, m: CallbackQuery):
         [InlineKeyboardButton("دراما 🥹", callback_data="drama " + str(m.from_user.id))],
 
         [InlineKeyboardButton("𝗁᥆ꪔᥱ", callback_data="aflamAR2 " + str(m.from_user.id))],
-        [InlineKeyboardButton("⌞ ᥉᥆υᖇᥴᥱ ᥲ️ᖇꪀ᥆ρ⌝", url=f"https://t.me/N_G_12")],
+        [InlineKeyboardButton("𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳", url=f"https://t.me/ah05v")],
 
     ])
     await m.message.edit_text("◍ اهلا بيك في قائمة الافلام العربيه\n√", reply_markup=keyboard)
@@ -116,8 +116,7 @@ async def comedy(c: Client, m: CallbackQuery):
         [InlineKeyboardButton("⌯ البدله", callback_data="AFYONA20 " + str(m.from_user.id))],
 
         [InlineKeyboardButton("𝗁᥆ꪔᥱ", callback_data="film " + str(m.from_user.id))],
-        [InlineKeyboardButton("⌞ ᥉᥆υᖇᥴᥱ ᥲ️ᖇꪀ᥆ρ⌝", url=f"https://t.me/N_G_12")],
-
+        [InlineKeyboardButton("𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳", url=f"https://t.me/ah05v")],
     ])
     await m.message.edit_text("◍ اهلا بك في قائمة الافلام الكوميدي العربيه\n√", reply_markup=keyboard)
 
@@ -1577,7 +1576,7 @@ async def moslsl(c: Client, m: CallbackQuery):
         [InlineKeyboardButton("ابو العروسة 📼", callback_data="Xmos5 " + str(m.from_user.id))],
 
         [InlineKeyboardButton("𝗁᥆ꪔᥱ", callback_data="aflamAR2 " + str(m.from_user.id))],
-        [InlineKeyboardButton("⌞ ᥉᥆υᖇᥴᥱ ᥲ️ᖇꪀ᥆ρ⌝", url=f"https://t.me/N_G_12")],
+        [InlineKeyboardButton("𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳", url=f"https://t.me/ah05v")],
 
     ])
     await m.message.edit_text("◍ اهلا بيك في قائمة المسلسلات العربيه\n√", reply_markup=keyboard)
@@ -1606,7 +1605,7 @@ async def Xmos1(c: Client, m: CallbackQuery):
         [InlineKeyboardButton("⌯ الحلقة 13", callback_data="Zmos226 " + str(m.from_user.id))],
 
         [InlineKeyboardButton("𝗁᥆ꪔᥱ", callback_data="moslsl " + str(m.from_user.id))],
-        [InlineKeyboardButton("⌞ ᥉᥆υᖇᥴᥱ ᥲ️ᖇꪀ᥆ρ⌝", url=f"https://t.me/N_G_12")],
+        [InlineKeyboardButton("𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳", url=f"https://t.me/ah05v")],
 
     ])
     await m.message.edit_text("◍ اهلا بيك في مسلسل 📼 حشمت في البيت الأبيض\n√", reply_markup=keyboard)
@@ -1652,7 +1651,7 @@ async def Xmos2(c: Client, m: CallbackQuery):
         [InlineKeyboardButton("⌯ الحلقة 30", callback_data="Zmos258 " + str(m.from_user.id))],
 
         [InlineKeyboardButton("𝗁᥆ꪔᥱ", callback_data="moslsl " + str(m.from_user.id))],
-        [InlineKeyboardButton("⌞ ᥉᥆υᖇᥴᥱ ᥲ️ᖇꪀ᥆ρ⌝", url=f"https://t.me/N_G_12")],
+        [InlineKeyboardButton("𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳", url=f"https://t.me/ah05v")],
 
     ])
     await m.message.edit_text("◍ اهلا بيك في مسلسل 📼 2- لعبة النسيان\n√", reply_markup=keyboard)
@@ -1698,7 +1697,7 @@ async def Xmos3(c: Client, m: CallbackQuery):
         [InlineKeyboardButton("⌯ الحلقة 30", callback_data="Zmos290 " + str(m.from_user.id))],
 
         [InlineKeyboardButton("𝗁᥆ꪔᥱ", callback_data="moslsl " + str(m.from_user.id))],
-        [InlineKeyboardButton("⌞ ᥉᥆υᖇᥴᥱ ᥲ️ᖇꪀ᥆ρ⌝", url=f"https://t.me/N_G_12")],
+        [InlineKeyboardButton("𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳", url=f"https://t.me/ah05v")],
 
     ])
     await m.message.edit_text("◍ اهلا بيك في مسلسل 📼 3- ب 100 وش\n√", reply_markup=keyboard)
@@ -1744,7 +1743,7 @@ async def Xmos4(c: Client, m: CallbackQuery):
         [InlineKeyboardButton("⌯ الحلقة 30", callback_data="Zmos322 " + str(m.from_user.id))],
 
         [InlineKeyboardButton("𝗁᥆ꪔᥱ", callback_data="moslsl " + str(m.from_user.id))],
-        [InlineKeyboardButton("⌞ ᥉᥆υᖇᥴᥱ ᥲ️ᖇꪀ᥆ρ⌝", url=f"https://t.me/N_G_12")],
+        [InlineKeyboardButton("𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳", url=f"https://t.me/ah05v")],
 
     ])
     await m.message.edit_text("◍ اهلا بيك في مسلسل 📼 4- آدم\n√", reply_markup=keyboard)
@@ -1820,7 +1819,7 @@ async def Xmos5(c: Client, m: CallbackQuery):
         [InlineKeyboardButton("⌯ الحلقة 60", callback_data="Zmos384 " + str(m.from_user.id))],
 
         [InlineKeyboardButton("𝗁᥆ꪔᥱ", callback_data="moslsl " + str(m.from_user.id))],
-        [InlineKeyboardButton("⌞ ᥉᥆υᖇᥴᥱ ᥲ️ᖇꪀ᥆ρ⌝", url=f"https://t.me/N_G_12")],
+        [InlineKeyboardButton("𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳", url=f"https://t.me/ah05v")],
 
     ])
     await m.message.edit_text("◍ اهلا بيك في مسلسل 📼 6-ابو العروسة\n√", reply_markup=keyboard)
@@ -1866,7 +1865,7 @@ async def toba(c: Client, m: CallbackQuery):
         [InlineKeyboardButton("⌯ الحلقة 30", callback_data="toba30 " + str(m.from_user.id))],
 
         [InlineKeyboardButton("𝗁᥆ꪔᥱ", callback_data="moslsl " + str(m.from_user.id))],
-        [InlineKeyboardButton("⌞ ᥉᥆υᖇᥴᥱ ᥲ️ᖇꪀ᥆ρ⌝", url=f"https://t.me/N_G_12")],
+        [InlineKeyboardButton("𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳", url=f"https://t.me/ah05v")],
 
     ])
     await m.message.edit_text("◍ اهلا بيك في مسلسل 📼 5-توبه\n√", reply_markup=keyboard)
