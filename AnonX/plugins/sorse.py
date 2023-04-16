@@ -20,19 +20,16 @@ from random import  choice, randint
 )
 async def huhh(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/14c7948ad180050fe16e4.jpg",
-        caption=f"""╭═★⊷⌯⧼[⌞ѕᴏụʀᴄᴇ ᴀʟᴍᴏʀᴛᴀɢᴇʟ⌝](https://t.me/AlmortagelTech)⧽⌯⊶★═╮\n★‹ [⌞ѕᴏụʀᴄᴇ ᴀʟᴍᴏʀᴛᴀɢᴇʟ⌝](https://t.me/AlmortagelTech)\n★‹ [ALMORTAGELِ](https://t.me/ALMORTAGEL_12)\n╰═★⊷⌯⧼[⌞ ѕᴏụʀᴄᴇ ᴀʟᴍᴏʀᴛᴀɢᴇʟ⌝](https://t.me/AlmortagelTech)⧽⌯⊶★═╯\n ⍟ Welcome to ѕᴏụʀᴄᴇ ᴀʟᴍᴏʀᴛᴀɢᴇʟ""",
+        photo=f"https://telegra.ph/file/fb3e0c602a7da30ce6498.jpg",
+        caption=f"""[★⊷⧼𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳⧽⊶★](https://t.me/ah05v)\n [★⊷⧼𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳⧽⊶★](https://t.me/ah05v)\n [𝑌.𝑂²¹ ͢͢➛ℍ𝗺!ِٰ𝗱♪](https://t.me/ah_2_v)\n[★⊷⧼𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳⧽⊶★](https://t.me/ah05v)\n ⍟ Welcome to 𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "ALMORTAGEL", url=f"https://t.me/ALMORTAGEL_12"), 
+                        "𝑌.𝑂²¹ ͢͢➛ℍ𝗺!ِٰ𝗱♪", url=f"https://t.me/ah_2_v"), 
                 ],[
                     InlineKeyboardButton(
-                        "⌞ѕᴏụʀᴄᴇ ᴀʟᴍᴏʀᴛᴀɢᴇʟ⌝⚡️", url=f"https://t.me/AlmortagelTech"),
-                ],[
-                    InlineKeyboardButton(
-                        "للتنصيب راسلني", url=f"https://t.me/ALMORTAGEL_12"),
+                        "𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳", url=f"https://t.me/ah05v"),
                 ],
 
             ]
