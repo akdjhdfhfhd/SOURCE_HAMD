@@ -25,7 +25,7 @@ REPLY_MESSAGE_BUTTONS = [
         ("قران")
     ],
     [
-        ("فيلمك. 🎥")
+        ("غغ")
     ],
     [
         ("اقتباسات"),
@@ -46,14 +46,14 @@ REPLY_MESSAGE_BUTTONS = [
         ("صراحه")
     ],
     [
-        ("الالعاب. 🐰")
+        ("الالعاب")
     ],
     [
         ("نكته"),
         ("كتبات")
     ],
     [
-        ("اذكار. 💎")
+        ("اذكار")
     ],
     [
         ("حساب العمر"),
@@ -84,7 +84,7 @@ REPLY_MESSAGE_BUTTONS = [
     ]
 ]
 
-@app.on_message(filters.regex("^/AFYN"))
+@app.on_message(filters.regex("^/HAMD"))
 async def cpanel(_, message: Message):             
         text = REPLY_MESSAGE
         reply_markup = ReplyKeyboardMarkup(REPLY_MESSAGE_BUTTONS, resize_keyboard=True, selective=True)
@@ -95,19 +95,19 @@ async def cpanel(_, message: Message):
 
 @app.on_message(filters.regex("^اخفاء الازرار . 🕷$"))
 async def down(client, message):
-          m = await message.reply(" **- تم اخفاء الازرار بنجاح . 🐰\n\n- لاظهار كيب الارشادات /ARN   \n. 🕷**\n\n- لاظهار كيب الاعضاء والتسليه  /AFYN  \n. 🕷**", reply_markup= ReplyKeyboardRemove(selective=True))
+          m = await message.reply(" **- تم اخفاء الازرار بنجاح . 🐰\n\n- لاظهار كيب الارشادات /ARN   \n. 🕷**\n\n- لاظهار كيب الاعضاء والتسليه  /HAMD  \n. 🕷**", reply_markup= ReplyKeyboardRemove(selective=True))
 
 
 
 @app.on_message(filters.regex("يـوتيوب. 📽"))
 def reply_to_HEY(Client, message):
     message.reply_photo(
-        photo=f"https://telegra.ph/file/9082f22163efb73912bab.jpg",
+        photo=f"https://telegra.ph/file/97f938ac5f8a760d38ee6.jpg",
         caption=f"""**يتم استخدام هذا الامر لعرض تحميل من اليوتيوب**\n**استخدم الامر بهذا الشكل** `تنزيل` ** او ** `يوتيوب` ** كمثل تنزيل سوره الرحمن اضغط علي الامر لنسخ والاستخدام**""",
         reply_markup=InlineKeyboardMarkup(
             [
             [
-                InlineKeyboardButton("᥉᥆υᖇᥴᥱ ᥲ️ᖇꪀ᥆ρ", url=f"https://t.me/N_G_12"),
+                InlineKeyboardButton("𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳", url=f"https://t.me/ah05v"),
             ]
          ]
      )
