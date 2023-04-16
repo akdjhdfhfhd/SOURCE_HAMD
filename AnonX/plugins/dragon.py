@@ -1,32 +1,17 @@
-from AnonX.utils.database import is_music_playing, music_off
-from strings import get_command
 import asyncio
-from strings.filters import command
-from AnonX import app
-from AnonX.core.call import Yukki
-from AnonX.utils.database import set_loop
-from AnonX.utils.decorators import AdminRightsCheck
-from AnonX.utils.database import is_muted, mute_on
-from AnonX.utils.database import is_muted, mute_off
-from AnonX.utils.database import is_music_playing, music_on
-from datetime import datetime
-from config import BANNED_USERS, MUSIC_BOT_NAME, PING_IMG_URL, lyrical, START_IMG_URL, MONGO_DB_URI, OWNER_ID
-from AnonX.utils import bot_sys_stats
-from AnonX.utils.decorators.language import language
+
+import os
+import time
+import requests
+from config import START_IMG_URL
+from pyrogram import filters
 import random
-import config
-import re
-from config import GITHUB_REPO, SUPPORT_CHANNEL, SUPPORT_GROUP
-import string
-import lyricsgenius as lg
-from pyrogram.types import (InlineKeyboardButton,
-                            InlineKeyboardMarkup, Message)
-from pyrogram import Client, filters
+from pyrogram import Client
+from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, ReplyKeyboardMarkup
+from strings.filters import command
 from AnonX import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
-from typing import Union
-import sys
-from os import getenv
-from dotenv import load_dotenv
+from AnonX import app
+from random import  choice, randint
 
 load_dotenv()
 
