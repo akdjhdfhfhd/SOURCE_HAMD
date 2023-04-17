@@ -15,7 +15,6 @@ from AnonX.misc import SUDOERS
 @app.on_message(command(["اشتراك"]))
 async def must_join_channel(bot: Client, msg: Message):
         return
-    try:
         try:
             await bot.get_chat_member(CHANNEL_SUDO, msg.from_user.id)
         except UserNotParticipant:
