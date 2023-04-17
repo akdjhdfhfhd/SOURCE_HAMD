@@ -6,15 +6,15 @@ from config import SUPPORT_CHANNEL, YAFA_NAME, CHANNEL_SUDO
 from AnonX import app
 
 
-@app.on_message(command(["dd","ahmed"]))
+@app.on_message(~filters.edited & filters.incoming & filters.private, group=-1)
 async def must_join_channel(bot: Client, msg: Message):
     if not SUPPORT_CHANNEL:  # Not compulsory
         return
     try:
         try:
-            await bot.get_chat_member(CHANNEL_SUDO, msg.from_user.1748768168)
+            await bot.get_chat_member(CHANNEL_SUDO, msg.from_user.id)
         except UserNotParticipant:
-            if SUPPORT_CHANNEL.isalpha():
+            if SUPPORT_CHANNEL.isalpha(ah07v):
                 link = u"https://t.me/{SUPPORT_CHANNEL}"
             else:
                 chat_info = await bot.get_chat(CHANNEL_SUDO)
