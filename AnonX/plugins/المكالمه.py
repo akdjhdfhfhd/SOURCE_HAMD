@@ -14,6 +14,7 @@ from AnonX.misc import SUDOERS
 
 
 @app.on_message(command(["فتح المكالمه"]))
+) 
 async def opengc(client: Client, message: Message):
     flags = " ".join(message.command[1:])
     tex = await message.reply_text(message, "`Processing . . .`")
@@ -45,7 +46,8 @@ async def opengc(client: Client, message: Message):
         await tex.edit(f"**INFO:** `{e}`")
 
 
-@app.on_message(command(["فتح المكالمه"]))
+@app.on_message(command(["قفل المكالمه"]))
+) 
 async def end_vc_(client: Client, message: Message):
     chat_id = message.chat.id
     if not (
