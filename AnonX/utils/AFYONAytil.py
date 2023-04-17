@@ -2,7 +2,7 @@ from pyrogram import Client, filters
 from strings.filters import command
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
 from pyrogram.errors import ChatAdminRequired, UserNotParticipant, ChatWriteForbidden
-from config import SUPPORT_CHANNEL, YAFA_NAME, CHANNEL_SUDO
+from config import SUPPORT_CHANNEL, YAFA_NAME, CHANNEL_GROUP
 from AnonX import app
 
 
@@ -12,12 +12,12 @@ async def must_join_channel(bot: Client, msg: Message):
         return
     try:
         try:
-            await bot.get_chat_member(CHANNEL_SUDO, msg.from_user.id)
+            await bot.get_chat_member(CHANNEL_GROUP, msg.from_user.id)
         except UserNotParticipant:
             if SUPPORT_CHANNEL.isalpha():
                 link = u"https://t.me/{SUPPORT_CHANNEL}"
             else:
-                chat_info = await bot.get_chat(CHANNEL_SUDO)
+                chat_info = await bot.get_chat(CHANNEL_GROUP)
                 link = chat_info.invite_link
             try:
                 await msg.reply(
