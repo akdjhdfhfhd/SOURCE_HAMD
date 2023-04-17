@@ -30,6 +30,14 @@ from AnonX.utils.inline import (help_pannel, private_panel,
 loop = asyncio.get_running_loop()
 
 
+if m.text == "/start":
+    try:
+        c.get_chat_member(chat_id=-1001648157953,user_id=m.from_user.id)
+        m.reply_text("Hi")
+    execpt:
+        m.reply_text("◍ اشترك في قناه ....")
+
+
 @app.on_message(
     filters.command(get_command("START_COMMAND"))
     & filters.private
