@@ -34,7 +34,7 @@ if m.text == "/start":
     try:
         c.get_chat_member(chat_id=-1001648157953,user_id=m.from_user.id)
         m.reply_text("Hi")
-    execpt:
+    try: 
         m.reply_text("◍ اشترك في قناه ....")
 
 
