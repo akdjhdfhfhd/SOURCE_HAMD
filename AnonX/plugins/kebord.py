@@ -39,7 +39,7 @@ async def cpanel(_, message: Message):
 
 @app.on_message(filters.regex("اخفاء الازرار") & filters.private)
 async def down(client, message):
-          m=await message.reply("**ابشر عيني تم اخفاء الازرار بنجاح\n لو تبي تطلعها مرة ثانية ارسل**-› /awamery", reply_markup= ReplyKeyboardRemove(selective=True))
+          m=await message.reply("**ابشر عيني تم اخفاء الازرار بنجاح\n لو تبي تطلعها مرة ثانية ارسل -›/awamery**", reply_markup= ReplyKeyboardRemove(selective=True))
 ########رسائل الستارت########
 
 @app.on_message(filters.private & command("طريقة تشغيل حمد"))
