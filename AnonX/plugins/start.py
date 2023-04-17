@@ -224,9 +224,11 @@ async def start_comm(client, message: Message, _):
 )
 @LanguageStart
 async def testbot(client, message: Message, _):
-    out = start_pannel(_)
-    return await message.reply_text(
-        _["start_1"].format(
+    OWNER = OWNER_ID[0]
+    out = start_pannel(_, app.username, OWNER)
+    return await message.reply_photo(
+               photo=config.START_IMG_URL,
+               caption=_["start_1"].format(
             message.chat.title, config.MUSIC_BOT_NAME
         ),
         reply_markup=InlineKeyboardMarkup(out),
