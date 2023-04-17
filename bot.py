@@ -1,6 +1,6 @@
-from telethon import events, TelegramClient, Button
+from AnonX import events, TelegramClient, Button
 import logging
-from telethon.tl.functions.users import GetFullUserRequest as us
+from AnonX.tl.functions.users import GetFullUserRequest as us
 import os
 
 
