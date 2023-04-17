@@ -13,9 +13,7 @@ from AnonX import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
 from AnonX.misc import SUDOERS
 
 
-@Client.on_message(
-    filters.command(["فتح المكالمه"], ".") & (filters.me)
-)
+@app.on_message(command(["فتح المكالمه"]))
 async def opengc(client: Client, message: Message):
     flags = " ".join(message.command[1:])
     tex = await message.reply_text(message, "`Processing . . .`")
@@ -47,9 +45,7 @@ async def opengc(client: Client, message: Message):
         await tex.edit(f"**INFO:** `{e}`")
 
 
-@Client.on_message(
-    filters.command(["قفل المكالمه"], ".") & (filters.me)
-)
+@app.on_message(command(["فتح المكالمه"]))
 async def end_vc_(client: Client, message: Message):
     chat_id = message.chat.id
     if not (
