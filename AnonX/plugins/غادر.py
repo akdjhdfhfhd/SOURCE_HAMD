@@ -13,8 +13,8 @@ from AnonX import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
 from AnonX.misc import SUDOERS
 
 
+
 @app.on_message(command(["ابراج","غادر حمد"]))
-@AdminRightsCheck
 async def bra(client: Client, message: Message):
        usr = await client.get_users(message.from_user.id)
        user_id = message.from_user.id
