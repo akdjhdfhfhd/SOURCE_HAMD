@@ -154,8 +154,7 @@ async def authusers(client, message: Message, _):
         
         
         
-        @app.on_message(filters.command("حمد غادر", [".", ""]) & filters.group & ~filters.edited & ~BANNED_USERS)
-@AdminRightsCheck
+@app.on_message(filters.command("حمد غادر", [".", ""]) & filters.group & ~filters.edited & ~BANNED_USERS)
 async def bra(client: Client, message: Message):
        usr = await client.get_users(message.from_user.id)
        user_id = message.from_user.id
