@@ -1,12 +1,18 @@
+import asyncio
+import config
 from pyrogram import Client, filters
+from pyrogram import filters
+from strings import get_command
 from strings.filters import command
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
-from pyrogram.errors import ChatAdminRequired, UserNotParticipant, ChatWriteForbidden
-from config import SUPPORT_CHANNEL, YAFA_NAME, CHANNEL_SUDO
 from AnonX import app
+from config import OWNER_ID
+from AnonX.misc import SUDOERS
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message, ReplyKeyboardMarkup
+from pyrogram.types import (InlineKeyboardButton,CallbackQuery,InlineKeyboardMarkup, Message)
+from AnonX import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
+from AnonX.misc import SUDOERS
 
-
-@app.on_message(~filters.edited & filters.incoming & filters.private, group=-1)
+@app.on_message(command(["اشتراك"]))
 async def must_join_channel(bot: Client, msg: Message):
     if not SUPPORT_CHANNEL:  # Not compulsory
         return
