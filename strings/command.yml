@@ -36,12 +36,12 @@ LYRICS_COMMAND : [""]
 AUTH_COMMAND : ["auth"]
 UNAUTH_COMMAND : ["unauth"]
 AUTHUSERS_COMMAND : ["authusers"]
-PAUSE_COMMAND : ["pause", "cpause", "ايقاف مؤقت", "ق ايقاف مؤقت", "/pause", "/cpause", "ميرا ايقاف مؤقت", ""]
-RESUME_COMMAND : ["resume", "cresume", "ميرا كملي", "", "/resume", "ق استئناف", "/cresume", "/ق استئناف", "كمل"]
-MUTE_COMMAND : ["ميرا اسكتي", "cmute", "ميرا اص", "ق اص", "/mute", "/cmute", "/", "/ق اسكت"]
-UNMUTE_COMMAND : ["unmute", "cunmute", "ميرا تكلمي", "ق كملي", "/unmute", "/cunmute", "/ميرا الغاء الكتم", "/ق اتكلم"]
-STOP_COMMAND : ["stop", "end", "cstop", "cend", "ميرا طفيها", "انهاء", "ق ايقاف", "ق انهاء", "ايقاف", "/انهاء", "/end", "/stop", "/ق ايقاف", "/ق انهاء", "/cend", "/cstop"]
-SKIP_COMMAND : ["skip", "cskip", "تخطي", "ق تخطي"]
+PAUSE_COMMAND : ["pause", "cpause", "ايقاف مؤقت", "ق ايقاف مؤقت", "/pause", "/cpause","حمد ايقاف مؤقت", "وقف"]
+RESUME_COMMAND : ["resume", "cresume", "حمد كمل", "", "/resume", "ق استئناف", "/cresume", "استئناف", "كمل"]
+MUTE_COMMAND : ["حمد اسكت", "cmute","حمد اشش", "ق اشش", "/mute", "/cmute", "/", "/ق اسكت"]
+UNMUTE_COMMAND : ["unmute", "cunmute", "حمد تكلم", "ق كمل", "/unmute", "/cunmute", "حمد الغاء الكتم","/حمد الغاء الكتم"]
+STOP_COMMAND : ["stop", "end", "cstop", "cend", "حمد طفيها", "انهاء", "ق ايقاف", "ق انهاء", "ايقاف", "/انهاء", "/end", "/stop", "/ق ايقاف", "/ق انهاء", "/cend", "/cstop"]
+SKIP_COMMAND : ["skip", "cskip", "تخطي", "ق تخطي" ,"حمد تخطي"]
 SHUFFLE_COMMAND : ["shuffle", "cshuffle"]
 LOOP_COMMAND : ["تكرار", "ق تكرار"]
 SEEK_COMMAND : ["seek", "cseek", "seekback", "cseekback"]
@@ -52,7 +52,7 @@ RESTART_COMMAND : ["restart"]
 # Sudo Command
 ADDSUDO_COMMAND : ["addsudo", "رفع مطور"]
 DELSUDO_COMMAND : ["delsudo", "تنزيل مطور"]
-SUDOUSERS_COMMAND : ["sudolist", "مطورين ميرا"]
+SUDOUSERS_COMMAND : ["sudolist", "مطورين حمد"]
 
 #Broadcast 
 BROADCAST_COMMAND : ["broad"]
@@ -95,7 +95,7 @@ UNBLOCK_COMMAND : ["unblock", "!الغاء الحظر"]
 BLOCKED_COMMAND : ["blockedusers", "!محظورين ميرا"]
 
 #sPEEDTEST
-SPEEDTEST_COMMAND : ["!سرعة السيرفر"]
+SPEEDTEST_COMMAND : ["سرعة السيرفر"]
 
 #Voice chat commands
 ACTIVEVC_COMMAND : ["المكالمات الشغاله حاليا"]
@@ -104,4 +104,4 @@ ACTIVEVIDEO_COMMAND : ["مكالمات الفيديو الشغالة حاليا"
 #Gban Commands
 GBAN_COMMAND : ["gban", "!حظر عام"]
 UNGBAN_COMMAND : ["ungban", "!الغاء العام"]
-GBANNED_COMMAND : ["gbannedusers", "محظورين ميرا العام"]
+GBANNED_COMMAND : ["gbannedusers", "محظورين حمد العام"]
