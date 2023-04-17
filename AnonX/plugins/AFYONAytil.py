@@ -14,7 +14,6 @@ from AnonX.misc import SUDOERS
 
 @app.on_message(command(["اشتراك"]))
 async def must_join_channel(bot: Client, msg: Message):
-    if not SUPPORT_CHANNEL:  # Not compulsory
         return
     try:
         try:
