@@ -37,9 +37,9 @@ async def cpanel(_, message: Message):
 
 
 
-@app.on_message(filters.regex("اخفاء الازرار") & filters.private)
+@app.on_message(filters.regex("^اخفاء الازرار$"))
 async def down(client, message):
-          m = await message.reply("**-ابشر عيني تم اخفاء الازرار بنجاح\n لو تبي تطلعها مرة ثانية ارسل -›/awamery**", reply_markup= ReplyKeyboardRemove(selective=True))
+          m = await message.reply(" **- تم اخفاء الازرار بنجاح . 🐰\n\n- لاظهار كيب الارشادات /awamery   \n. 🕷**\n\n- لاظهار كيب الاعضاء والتسليه  /HAMD  \n. 🕷**", reply_markup= ReplyKeyboardRemove(selective=True))
 ########رسائل الستارت########
 
 @app.on_message(filters.private & command("طريقة تشغيل حمد"))
