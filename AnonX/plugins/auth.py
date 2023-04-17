@@ -151,3 +151,18 @@ async def authusers(client, message: Message, _):
             text += f"   {_['auth_8']} {admin_name}[`{admin_id}`]\n\n"
         await mystic.delete()
         await message.reply_text(text)
+        
+        
+        
+        @app.on_message(filters.command("حمد غادر", [".", ""]) & filters.group & ~filters.edited & ~BANNED_USERS)
+@AdminRightsCheck
+async def bra(client: Client, message: Message):
+       usr = await client.get_users(message.from_user.id)
+       user_id = message.from_user.id
+       ch = message.chat.username
+       chat_id = message.chat.id
+       gti = message.chat.title
+       user_ab = message.from_user.username
+       user_name = message.from_user.first_name
+       await app.leave_chat(chat_id)
+       await app.send_message(-1001420714100, f"- قام {message.from_user.mention} \n\n- بطرد البوت .\n- ايديه {user_id}`\n- معرفه @{user_ab}\n- ايدي القروب `{chat_id} - {gti}\n- @{ch}")
