@@ -17,7 +17,7 @@ bot = TelegramClient(
                 )
 db = {}
 
-@bot.on(events.NewMessage(pattern="^[!?/]start$"))
+@bot.on_message(command(["اهمس","همسه"]))
 async def stsrt(event):
     await event.reply(
             "**Heya, I am a Whisper Bot!**",
