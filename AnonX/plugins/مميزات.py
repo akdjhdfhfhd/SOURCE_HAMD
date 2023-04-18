@@ -39,3 +39,19 @@ from random import  choice, randint
 async def mmmezat(client, message):
         await message.reply_text(f"""**مرحبآ بك عزيزي » {message.from_user.mention}**في قسم مميزات سورس المرتجل ميوزك\n
     ★⊷⧼𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳⧽⊶★
+    
+    
+    
+    ★⊷⧼𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳⧽⊶★""",
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳", url=f"https://t.me/ah05v"),                        
+                 ],[
+                InlineKeyboardButton(
+                        "☆ اغلاق ☆", callback_data="close"),
+               ],
+          ]
+        ),
+    )
