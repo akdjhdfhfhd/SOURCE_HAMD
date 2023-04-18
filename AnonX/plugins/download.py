@@ -18,7 +18,6 @@ from youtubesearchpython import VideosSearch
 from yt_dlp import YoutubeDL
 from AnonX import app as Client
 
-from AnonX.plugins.play.filters import command, other_filters
 
 def remove_if_exists(path):
     if os.path.exists(path):
