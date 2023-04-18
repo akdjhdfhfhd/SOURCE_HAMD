@@ -81,5 +81,3 @@ async def start(c:Client,m:Message):
   return
  return await m.reply(
  "◍ مرحباا بك مطور البوت 🥂🖤")
-
-app.run()
