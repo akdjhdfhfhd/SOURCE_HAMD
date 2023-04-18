@@ -173,7 +173,7 @@ async def ihd(client: Client, message: Message):
 async def ihd(client: Client, message: Message):
     rl = random.randint(1,50)
     url = f"https://t.me/bsmaatt/{rl}"
-    await client.send_audio(message.chat.id,url,caption="🐉 ¦ تـم اختيـار فيلم لـك",parse_mode="html",
+    await client.send_audio(message.chat.id,url,caption="🐉 ¦ تـم اختيـار اغنيه لـك",parse_mode="html",
     reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -201,7 +201,6 @@ async def ihd(client: Client, message: Message):
 
 @app.on_message(command(["ايدي","id","/id"]))
 async def iddd(client, message):
-    if message.chat.id in iddof:
       return
     usr = await client.get_chat(message.from_user.id)
     name = usr.first_name
