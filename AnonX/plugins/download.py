@@ -9,6 +9,7 @@ import lyricsgenius
 import aiofiles
 import aiohttp
 import requests
+import wget
 import yt_dlp
 from pyrogram import Client, filters
 from pyrogram.errors import FloodWait, MessageNotModified
@@ -16,15 +17,16 @@ from pyrogram.types import Message
 from youtube_search import YoutubeSearch
 from youtubesearchpython import VideosSearch
 from yt_dlp import YoutubeDL
-from AnonX import app as Client
+from YukkiMusic import app as Client
 
+from YukkiMusic.plugins.play.filters import command, other_filters
 
 def remove_if_exists(path):
     if os.path.exists(path):
         os.remove(path)
 
 
-@app.on_message(command(["/song", "نزل", "اغاني", "موسيقي", "تنزيل", "/music"]) & ~filters.edited)
+@Client.on_message(command(["/song", "نزل", "اغاني", "موسيقي", "تنزيل", "/music"]) & ~filters.edited)
 async def song_downloader(_, message):
     query = " ".join(message.command[1:])
     m = await message.reply("🎬 العثور علي الاغنيه \n√")
@@ -84,7 +86,7 @@ async def song_downloader(_, message):
         print(e)
 
 
-@app.on_message(
+@Client.on_message(
     command(["/vsong", "/video", "حمل", "يوتيوب", "فيديو", "تحميل"]) & ~filters.edited
 )
 async def video_downloader(_, message):
