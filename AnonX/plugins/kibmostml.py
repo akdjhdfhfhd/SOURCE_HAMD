@@ -199,11 +199,7 @@ async def ihd(client: Client, message: Message):
         )
     )
 
-@app.on_message(
-    command(["ايدي","id","/id"])
-    & filters.group
-    & ~filters.edited
-)
+@app.on_message(command(["ايدي","id","/id"]))
 async def iddd(client, message):
     if message.chat.id in iddof:
       return
