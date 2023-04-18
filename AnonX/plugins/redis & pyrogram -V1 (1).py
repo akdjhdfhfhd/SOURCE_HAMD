@@ -27,9 +27,8 @@ REPLY_MESSAGE_BUTTONS = [
     [("المستخدمين"),("الأدمنية"),("الجروبات")],
     [("نقل ملكية البوت")],
     [("الغاء")]
-  ],
-  resize_keyboard=True
-)
+  ]
+]
 
 @app.on_message(filters.command("ahmed") & filters.private)
 async def for_users (app,m):
