@@ -1,22 +1,8 @@
-import os
-import re
-import time
-import asyncio
-import traceback
-
-import lyricsgenius
-
-import aiofiles
-import aiohttp
-import requests
-import yt_dlp
-from pyrogram import Client, filters
-from pyrogram.errors import FloodWait, MessageNotModified
-from pyrogram.types import Message
+from pyrogram import filters
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from youtube_search import YoutubeSearch
-from youtubesearchpython import VideosSearch
-from yt_dlp import YoutubeDL
-from AnonX import app as Client
+
+from AnonX import app
 
 
 def remove_if_exists(path):
