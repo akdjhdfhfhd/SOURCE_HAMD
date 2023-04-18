@@ -16,16 +16,16 @@ from pyrogram.types import Message
 from youtube_search import YoutubeSearch
 from youtubesearchpython import VideosSearch
 from yt_dlp import YoutubeDL
-from YukkiMusic import app as Client
+from AnonX import app as Client
 
-from YukkiMusic.plugins.filters import command, other_filters
+from AnonX.plugins.filters import command, other_filters
 
 def remove_if_exists(path):
     if os.path.exists(path):
         os.remove(path)
 
 
-@Client.on_message(command(["/song", "نزل", "اغاني", "موسيقي", "تنزيل", "/music"]) & ~filters.edited)
+@app.on_message(command(["/song", "نزل", "اغاني", "موسيقي", "تنزيل", "/music"]) & ~filters.edited)
 async def song_downloader(_, message):
     query = " ".join(message.command[1:])
     m = await message.reply("🎬 العثور علي الاغنيه \n√")
@@ -85,9 +85,7 @@ async def song_downloader(_, message):
         print(e)
 
 
-@Client.on_message(
-    command(["/vsong", "/video", "حمل", "يوتيوب", "فيديو", "تحميل"]) & ~filters.edited
-)
+@app.on_message(command(["/vsong", "/video", "حمل", "يوتيوب", "فيديو", "تحميل"]) & ~filters.edited
 async def video_downloader(_, message):
     ydl_opts = {
         "format": "best",
