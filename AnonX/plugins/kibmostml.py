@@ -199,19 +199,4 @@ async def ihd(client: Client, message: Message):
         )
     )
 
-@app.on_message(command(["ايدي","id","/id"]))
-async def ihd(client: Client, message: Message):
-    usr = await client.get_chat(message.from_user.id)
-    name = usr.first_name
-    photo = await app.download_media(usr.photo.big_file_id)
-    await client.send_audio(message.chat.id,url,caption="🤡 ¦𝙽𝙰𝙼𝙴 :{message.from_user.mention}\n🎯 ¦𝚄𝚂𝙴𝚁 :@{message.from_user.username}\n🎃 ¦𝙸𝙳 :`{message.from_user.id}`\n💌 ¦𝙱𝙸𝙾 :{usr.bio}\n✨ ¦𝙲𝙷𝙰𝚃: {message.chat.title}\n♻️ ¦𝙸𝙳.𝙶𝚁𝙾𝚄𝙿 :`{message.chat.id}`",parse_mode="html",
-    reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        message.from_user.first_name, url=f"https://t.me/{message.from_user.username}")
-                ],
-            ]
-        )
-    )
     
