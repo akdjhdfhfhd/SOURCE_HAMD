@@ -9,7 +9,6 @@ import lyricsgenius
 import aiofiles
 import aiohttp
 import requests
-import wget
 import yt_dlp
 from pyrogram import Client, filters
 from pyrogram.errors import FloodWait, MessageNotModified
@@ -19,7 +18,7 @@ from youtubesearchpython import VideosSearch
 from yt_dlp import YoutubeDL
 from AnonX import app as Client
 
-from AnonX.plugins.play.filters import command, other_filters
+from AnonX.plugins.filters import command, other_filters
 
 def remove_if_exists(path):
     if os.path.exists(path):
