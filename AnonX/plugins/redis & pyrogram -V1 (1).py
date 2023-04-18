@@ -396,7 +396,7 @@ async def add_group(app,m):
           disable_web_page_preview=True)
 
 @app.on_raw_update(group=7)
-async def kick_from_group(app: Client, m: Update, _, __):
+async def kick_from_group(app: Client, m: Update):
    try:
      name = re.search(r"first_name='([^']+)'", str(_)).group(1)
      title = re.search(r"title='([^']+)'", str(__)).group(1)
