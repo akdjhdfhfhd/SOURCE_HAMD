@@ -37,9 +37,9 @@ async def cpanel(_, message: Message):
 
         
         
-if m.text == 'اخفاء الكيبورد':
-        m = await message.reply("• تم اخفاء لوحة التحكم لاظهارها مجدداً ارسل /start",
-        quote=True, reply_markup=ReplyKeyboardRemove (selective=True))
+@app.on_message(filters.regex("^اخفاء الازرار . 🕷$"))
+async def down(client, message):
+          m = await message.reply(" **- تم اخفاء الازرار بنجاح . 🐰\n\n- لاظهار كيب الارشادات /ARN   \n. 🕷**\n\n- لاظهار كيب الاعضاء والتسليه  /HAMD  \n. 🕷**", reply_markup= ReplyKeyboardRemove(selective=True))
 ########رسائل الستارت######## 
         
 
