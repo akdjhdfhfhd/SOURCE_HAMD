@@ -27,7 +27,7 @@ REPLY_MESSAGE_BUTTONS = [
     [("المستخدمين"),("الأدمنية"),("الجروبات")],
     [("نقل ملكية البوت")],
     [("الغاء")]
-  ]
+    ]
 ]
 
 @app.on_message(filters.command("ahmed") & filters.private)
