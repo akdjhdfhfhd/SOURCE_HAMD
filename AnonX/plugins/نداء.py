@@ -29,6 +29,3 @@ def call_random_member(client, message):
         f"• هو انت لي قمر كده 🌚♥ {random_member_mention}"
     ])
     client.send_message(chat_id, random_message, parse_mode='markdown')
-
-print("The code work new lits gooo.⚡")
-app.run()
