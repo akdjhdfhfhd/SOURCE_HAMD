@@ -38,7 +38,7 @@ async def cpanel(_, message: Message):
         
         
 if m.text == 'اخفاء الكيبورد':
-        await m.reply("• تم اخفاء لوحة التحكم لاظهارها مجدداً ارسل /start",
+        m = await message.reply("• تم اخفاء لوحة التحكم لاظهارها مجدداً ارسل /start",
         quote=True, reply_markup=ReplyKeyboardRemove (selective=True))
 ########رسائل الستارت######## 
         
