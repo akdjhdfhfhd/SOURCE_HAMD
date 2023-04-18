@@ -12,7 +12,7 @@ from pyrogram.types import (InlineKeyboardButton,CallbackQuery,InlineKeyboardMar
 from AnonX import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
 from AnonX.misc import SUDOERS
 
-@app.on_message(command(["نداء"]))
+@app.on_message(command(["ابراج","نداء"]))
 def call_random_member(client, message):
     chat_id = message.chat.id
     members = [
