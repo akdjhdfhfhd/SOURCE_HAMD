@@ -44,7 +44,7 @@ app = Client(
 )
 
 async def check_sub(c:Client,m:Message):
- channel = "ah07v"  #قناتك
+ channel = "@ah07v"  #قناتك
  startMessage = "مرحبا بك صديقي تم التحقق من اشتراكك بقناة البوت"
  try:
   r = await c.get_chat_member(
