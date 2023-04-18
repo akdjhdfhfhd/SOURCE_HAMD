@@ -1,15 +1,18 @@
-print("Wait i work code new.⚡")
-import random
+import asyncio
+import config
 from pyrogram import Client, filters
+from pyrogram import filters
+from strings import get_command
+from strings.filters import command
+from AnonX import app
+from config import OWNER_ID
+from AnonX.misc import SUDOERS
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message, ReplyKeyboardMarkup
+from pyrogram.types import (InlineKeyboardButton,CallbackQuery,InlineKeyboardMarkup, Message)
+from AnonX import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
+from AnonX.misc import SUDOERS
 
-app = Client(
-    "Bot",
-    api_id = 21563297,
-    api_hash = "e2df7de79f05aca7297acd0ff65a4241",
-    bot_token = "5976672123:AAE_6qf89QYudrHC8cAQrTb8Rd6Nd2PZ84Y"
-)
-
-@app.on_message(filters.command(['نداء'], prefixes=""))
+@app.on_message(command(["نداء"]))
 def call_random_member(client, message):
     chat_id = message.chat.id
     members = [
