@@ -74,7 +74,7 @@ async def check_sub(c:Client,m:Message):
 #await check_sub(c=c,m=m)
 
 
-@app.on_message(filters.command('start')&filters.private)
+@app.on_message(filters.command('ashtrak')&filters.private)
 async def start(c:Client,m:Message):
  if not m.from_user.id == me:
   await check_sub(c=c,m=m)
