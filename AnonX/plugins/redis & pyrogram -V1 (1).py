@@ -1,26 +1,16 @@
-'''
-@Y88F8
-@DevZaid
-'''
 
-import redis, re
-from pyrogram import *
-from pyrogram.types import *
-from pyrogram.errors import PeerIdInvalid
+import asyncio
+from pyrogram import Client, filters
+from strings import get_command
+from strings.filters import command
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message, ReplyKeyboardMarkup
+from AnonX import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
 
-TOKEN = '_____'
-app = Client("remymbot",
-  api_id=9398500, api_hash="ad2977d673006bed6e5007d953301e13",
-  bot_token=TOKEN, 
-)
-bot_id = app.bot_token.split(":")[0]
 
-# create a Redis client
-r = redis.Redis(
-    host="127.0.0.1",
-    port=6379,)
 
-Keyboard = ReplyKeyboardMarkup(
+REPLY_MESSAGE = "**صلي علي اشرف خلق الله 🥹✨**"
+
+REPLY_MESSAGE_BUTTONS = [
   [
     [("اخفاء الكيبورد")],
     [("الاحصائيات")],
@@ -41,7 +31,7 @@ Keyboard = ReplyKeyboardMarkup(
   resize_keyboard=True
 )
 
-@app.on_message(filters.command("start") & filters.private)
+@app.on_message(filters.command("ahmed") & filters.private)
 async def for_users (app,m):
    if not check(m.from_user.id):
      await check_sub(app, m)
@@ -68,7 +58,7 @@ async def for_users (app,m):
         
      
    
-@app.on_message(filters.command("start") & filters.private, group=1)
+@app.on_message(filters.command("ahmed") & filters.private, group=1)
 async def keyboard_show(app,m):
     if check(m.from_user.id):
        await m.reply(f"• أهلا بك {m.from_user.mention} .\n• اليك لوحة التحكم الخاصة", reply_markup=Keyboard, quote=True)
@@ -684,12 +674,8 @@ def get_groups_backup() -> str:
 if not r.get(f"bot_owner{bot_id}"):
    owner = int(input("Enter owner id : "))
    r.set(f"bot_owner{bot_id}", owner)
-   
+  
 app.start()
 print("➕")
 idle()
-
-'''
-@Y88F8
-@DevZaid
-'''
+	
