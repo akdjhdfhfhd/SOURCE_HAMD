@@ -85,7 +85,9 @@ async def song_downloader(_, message):
         print(e)
 
 
-@app.on_message(command(["/vsong", "/video", "حمل", "يوتيوب", "فيديو", "تحميل"]) & ~filters.edited
+@app.on_message
+       (command(["/vsong", "/video", "حمل", "يوتيوب", "فيديو", "تحميل"]) & ~filters.edited
+   )
 async def video_downloader(_, message):
     ydl_opts = {
         "format": "best",
