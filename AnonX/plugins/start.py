@@ -34,7 +34,7 @@ from pyrogram.types import *
 from pyrogram.errors import *
 
 
-me = 1748768168 #ايدي المطور
+me = "1748768168" #ايدي المطور
 
 app = Client(
  "Spd",
@@ -81,6 +81,8 @@ async def start(c:Client,m:Message):
   return
  return await m.reply(
  "◍ مرحباا بك مطور البوت 🥂🖤")
+
+app.run()
 
 
 @app.on_message(
