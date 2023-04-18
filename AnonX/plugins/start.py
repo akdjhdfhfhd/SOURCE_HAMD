@@ -82,8 +82,6 @@ async def start(c:Client,m:Message):
  return await m.reply(
  "◍ مرحباا بك مطور البوت 🥂🖤")
 
-app.run()
-
 
 @app.on_message(
     filters.command(get_command("START_COMMAND"))
