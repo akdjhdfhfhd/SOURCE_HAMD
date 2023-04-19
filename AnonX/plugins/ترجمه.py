@@ -1,17 +1,15 @@
-# Dev : https://t me/ah07v
-#Group : https://t.me/ah07v
+import asyncio
+import os
+import time
 import requests
+import aiohttp
+from pyrogram import filters
+from pyrogram import Client
+from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, ReplyKeyboardMarkup
 from strings.filters import command
-from pyrogram.types import Message, User
-from aiohttp import ClientSession
-from pyrogram import filters, Client
-import re
-from pyrogram.types import (InlineKeyboardButton,
-                            InlineKeyboardMarkup, Message)
-from telegraph import upload_file
-from traceback import format_exc
+from AnonX import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
 from AnonX import app
-
+from asyncio import gather
 
 @app.on_message(command(["ترجمة","/tr"]))
 async def tr(_, message):
