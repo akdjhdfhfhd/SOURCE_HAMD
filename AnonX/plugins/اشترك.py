@@ -15,20 +15,20 @@ async def must_join_channel(bot: Client, msg: Message):
             await bot.get_chat_member(SUPPORT_GROUP, msg.from_user.id)
         except UserNotParticipant:
             if SUPPORT_CHANNEL.isalpha():
-                link = u"{SUPPORT_CHANNEL}"
+                link = u"@ah07v"
             else:
-                chat_info = await bot.get_chat(SUPPORT_GROUP)
+                chat_info = await bot.get_chat(ah07v)
                 link = chat_info.invite_link
             try:
                 await msg.reply(
                     f" ⏺️꒐ عليك الاشتراك في قناة البوت اولاً •\n!! | اشترك ثم ارسل /start",
                     disable_web_page_preview=True,
                     reply_markup=InlineKeyboardMarkup([
-                        [InlineKeyboardButton(f"{MUSIC_BOT_NAME}", url=link)]
+                        [InlineKeyboardButton(f"ahmed", url=link)]
                     ])
                 )
                 await msg.stop_propagation()
             except ChatWriteForbidden:
                 pass
     except ChatAdminRequired:
-        print(f"عليك رفع البوت آدمن في القناة أولاً ؟؟ : {SUPPORT_CHANNEL} !")
+        print(f"عليك رفع البوت آدمن في القناة أولاً ؟؟ : @ah07v !")
