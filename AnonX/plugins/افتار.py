@@ -14,7 +14,7 @@ from AnonX import app
 from random import  choice, randint
 
 
-@zedub.zed_cmd(pattern="حالات$")
+@app.on_message(command("حالات$")
 async def _(event):
     zzevent = await edit_or_reply(event, "**╮•⎚ جـارِ تحميـل حـالات واتـس ...**")
     try:
@@ -35,7 +35,7 @@ async def _(event):
         await zzevent.edit("**╮•⎚ عـذراً .. لـم استطـع ايجـاد المطلـوب ☹️💔**")
 
 
-@zedub.zed_cmd(pattern="ستوري انمي$")
+@app.on_message(command("ستوري انمي$")
 async def _(event):
     zzevent = await edit_or_reply(event, "**╮•⎚ جـارِ تحميـل الستـوري ...**")
     try:
@@ -56,7 +56,7 @@ async def _(event):
         await zzevent.edit("**╮•⎚ عـذراً .. لـم استطـع ايجـاد المطلـوب ☹️💔**")
 
 
-@zedub.zed_cmd(pattern="رقيه$")
+@app.on_message(command("رقيه$")
 async def _(event):
     zzevent = await edit_or_reply(event, "**╮•⎚ جـارِ تحميـل الرقيـه ...**")
     try:
@@ -77,7 +77,7 @@ async def _(event):
         await zzevent.edit("**╮•⎚ عـذراً .. لـم استطـع ايجـاد المطلـوب ☹️💔**")
 
 
-@zedub.zed_cmd(pattern="رمادي$")
+@app.on_message(command("رمادي$")
 async def _(event):
     zzevent = await edit_or_reply(event, "**╮•⎚ جـارِ تحميـل الافتـار ...**")
     try:
@@ -98,7 +98,7 @@ async def _(event):
         await zzevent.edit("**╮•⎚ عـذراً .. لـم استطـع ايجـاد المطلـوب ☹️💔**")
 
 
-@zedub.zed_cmd(pattern="رماديه$")
+@app.on_message(command("رماديه$")
 async def _(event):
     zzevent = await edit_or_reply(event, "**╮•⎚ جـارِ تحميـل الافتـار ...**")
     try:
@@ -119,7 +119,7 @@ async def _(event):
         await zzevent.edit("**╮•⎚ عـذراً .. لـم استطـع ايجـاد المطلـوب ☹️💔**")
 
 
-@zedub.zed_cmd(pattern="بيست$")
+@app.on_message(command("بيست$")
 async def _(event):
     zzevent = await edit_or_reply(event, "**╮ - جـارِ تحميـل الآفتـار ...🧚🏻‍♀🧚🏻‍♀╰**")
     try:
@@ -140,7 +140,7 @@ async def _(event):
         await zzevent.edit("**╮•⎚ عـذراً .. لـم استطـع ايجـاد المطلـوب ☹️💔**")
 
 
-@zedub.zed_cmd(pattern="حب$")
+@app.on_message(command("حب$")
 async def _(event):
     zzevent = await edit_or_reply(event, "**╮ - جـارِ تحميـل الآفتـار ...♥️╰**")
     try:
@@ -161,7 +161,7 @@ async def _(event):
         await zzevent.edit("**╮•⎚ عـذراً .. لـم استطـع ايجـاد المطلـوب ☹️💔**")
 
 
-@zedub.zed_cmd(pattern="رياكشن$")
+@app.on_message(command("رياكشن$")
 async def _(event):
     zzevent = await edit_or_reply(event, "**╮•⎚ جـارِ تحميـل الرياكشـن ...**")
     try:
@@ -182,7 +182,7 @@ async def _(event):
         await zzevent.edit("**╮•⎚ عـذراً .. لـم استطـع ايجـاد المطلـوب ☹️💔**")
 
 
-@zedub.zed_cmd(pattern="ادت$")
+@app.on_message(command("ادت$")
 async def _(event):
     zzevent = await edit_or_reply(event, "**╮•⎚ جـارِ تحميـل مقطـع ادت ...**")
     try:
@@ -203,7 +203,7 @@ async def _(event):
         await zzevent.edit("**╮•⎚ عـذراً .. لـم استطـع ايجـاد المطلـوب ☹️💔**")
 
 
-@zedub.zed_cmd(pattern="غنيلي$")
+@app.on_message(command("غنيلي$")
 async def _(event):
     zzevent = await edit_or_reply(event, "**╮•⎚ جـارِ تحميـل الاغنيـه ...𓅫╰**")
     try:
@@ -224,7 +224,7 @@ async def _(event):
         await zzevent.edit("**╮•⎚ عـذراً .. لـم استطـع ايجـاد المطلـوب ☹️💔**")
         
 
-@zedub.zed_cmd(pattern="شعر$")
+@app.on_message(command("شعر$")
 async def _(event):
     zzevent = await edit_or_reply(event, "**╮•⎚ جـارِ تحميـل الشعـر ...**")
     try:
@@ -245,7 +245,7 @@ async def _(event):
         await zzevent.edit("**╮•⎚ عـذراً .. لـم استطـع ايجـاد المطلـوب ☹️💔**")
 
 
-@zedub.zed_cmd(pattern="ميمز$")
+@app.on_message(command("ميمز$")
 async def _(event):
     zzevent = await edit_or_reply(event, "**╮•⎚ جـارِ تحميـل الميمـز ...**")
     try:
@@ -266,7 +266,7 @@ async def _(event):
         await zzevent.edit("**╮•⎚ عـذراً .. لـم استطـع ايجـاد المطلـوب ☹️💔**")
 
 
-@zedub.zed_cmd(pattern="ري اكشن$")
+@app.on_message(command("ري اكشن$")
 async def _(event):
     zzevent = await edit_or_reply(event, "**╮•⎚ جـارِ تحميـل الرياكشـن ...**")
     try:
@@ -287,7 +287,7 @@ async def _(event):
         await zzevent.edit("**╮•⎚ عـذراً .. لـم استطـع ايجـاد المطلـوب ☹️💔**")
 
 
-@zedub.zed_cmd(pattern="معلومه$")
+@app.on_message(command("معلومه$")
 async def _(event):
     zzevent = await edit_or_reply(event, "**╮•⎚ جـارِ تحميـل صـورة ومعلومـة ...**")
     try:
@@ -308,7 +308,7 @@ async def _(event):
         await zzevent.edit("**╮•⎚ عـذراً .. لـم استطـع ايجـاد المطلـوب ☹️💔**")
 
 
-@zedub.zed_cmd(pattern="تويت$")
+@app.on_message(command("تويت$")
 async def _(event):
     zzevent = await edit_or_reply(event, "**╮•⎚ كـت تـويت بالصـور ...**")
     try:
@@ -329,7 +329,7 @@ async def _(event):
         await zzevent.edit("**╮•⎚ عـذراً .. لـم استطـع ايجـاد المطلـوب ☹️💔**")
 
 
-@zedub.zed_cmd(pattern="خيرني$")
+@app.on_message(command("خيرني$")
 async def _(event):
     zzevent = await edit_or_reply(event, "**╮•⎚ لـو خيـروك بالصـور ...**")
     try:
@@ -350,7 +350,7 @@ async def _(event):
         await zzevent.edit("**╮•⎚ عـذراً .. لـم استطـع ايجـاد المطلـوب ☹️💔**")
 
 
-@zedub.zed_cmd(pattern="ولد انمي$")
+@app.on_message(command("ولد انمي$")
 async def _(event):
     zzevent = await edit_or_reply(event, "**╮ - جـارِ تحميـل الآفتـار ...𓅫╰**")
     try:
@@ -371,7 +371,7 @@ async def _(event):
         await zzevent.edit("**╮•⎚ عـذراً .. لـم استطـع ايجـاد المطلـوب ☹️💔**")
 
 
-@zedub.zed_cmd(pattern="بنت انمي$")
+@app.on_message(command("بنت انمي$")
 async def _(event):
     zzevent = await edit_or_reply(event, "**╮ - جـارِ تحميـل الآفتـار ...𓅫╰**")
     try:
@@ -392,7 +392,7 @@ async def _(event):
         await zzevent.edit("**╮•⎚ عـذراً .. لـم استطـع ايجـاد المطلـوب ☹️💔**")
 
 
-@zedub.zed_cmd(pattern="بنات$")
+@app.on_message(command("بنات$")
 async def _(event):
     zzevent = await edit_or_reply(event, "**╮ - جـارِ تحميـل الآفتـار ...𓅫╰**")
     try:
@@ -413,7 +413,7 @@ async def _(event):
         await zzevent.edit("**╮•⎚ عـذراً .. لـم استطـع ايجـاد المطلـوب ☹️💔**")
 
 
-@zedub.zed_cmd(pattern="رمزيات شباب$")
+@app.on_message(command("رمزيات شباب$")
 async def _(event):
     zzevent = await edit_or_reply(event, "**╮•⎚ جـارِ تحميـل حـالات الرمزيات ...**")
     try:
