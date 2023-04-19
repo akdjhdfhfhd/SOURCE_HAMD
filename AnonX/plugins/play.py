@@ -31,10 +31,6 @@ from AnonX.utils.stream.stream import stream
 force_btn = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton(   
-              text=f"{MUSIC_BOT_NAME}", url=f"{SUPPORT_CHANNEL}",)
-        ],
-        [
             InlineKeyboardButton(
               text="•قناة البوت•", url="https://t.me/ah07v",),                        
         ],        
