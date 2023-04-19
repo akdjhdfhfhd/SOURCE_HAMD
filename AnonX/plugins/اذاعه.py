@@ -9,7 +9,7 @@ from AnonX import app
 
 
 @app.on_message(filters.command("اذاعه") & filters.user(OWNER_ID))
-async def broadcast(_, message: Message):
+async def broadcast(_, message: message.id):
     brep = await message.reply_text("يـﮯتمـ آلآن آلآذآعهہ‏‏ بآلحسـآب آلمـسـآعد...")
     if message.reply_to_message:
         x = message.reply_to_message.id
