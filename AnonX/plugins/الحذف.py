@@ -7,8 +7,8 @@ from pyrogram import filters
 from pyrogram import Client
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, ReplyKeyboardMarkup
 from strings.filters import command
-from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
-from YukkiMusic import app
+from AnonX import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
+from AnonX import app
 
 
 
@@ -19,7 +19,7 @@ from YukkiMusic import app
 async def svksksa(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://telegra.ph//file/a6137caa707bdb1247d7c.jpg",
-        caption=f"""[احذف من هنا عليك الانضمام قبل الحذف](https://t.me/Tepthon)""",
+        caption=f"""[احذف من هنا عليك الانضمام قبل الحذف](https://t.me/ah07v)""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
