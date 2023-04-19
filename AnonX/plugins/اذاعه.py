@@ -5,7 +5,7 @@ from pyrogram.errors import FloodWait
 from pyrogram.types import Message
 
 from config import OWNER_ID
-from AnonX import app
+from AnonX import app, app2
 
 
 @app.on_message(filters.command("اذاعه") & filters.user(OWNER_ID))
