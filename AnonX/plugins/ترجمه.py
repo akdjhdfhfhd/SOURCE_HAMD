@@ -1,5 +1,5 @@
-# Dev : https://t me/YY8GG
-#Group : https://t.me/YaFaGr
+# Dev : https://t me/ah07v
+#Group : https://t.me/ah07v
 import requests
 from strings.filters import command
 from gpytranslate import Translator
@@ -11,7 +11,7 @@ from pyrogram.types import (InlineKeyboardButton,
                             InlineKeyboardMarkup, Message)
 from telegraph import upload_file
 from traceback import format_exc
-from YukkiMusic import app
+from AnonX import app
 
 
 @app.on_message(command(["ترجمة","/tr"]))
