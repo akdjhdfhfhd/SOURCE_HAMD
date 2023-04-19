@@ -1,16 +1,22 @@
-import asyncio
 import os
+import re
 import time
-import requests
-import aiohttp
-from pyrogram import filters
-from pyrogram import Client
-from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, ReplyKeyboardMarkup
-from strings.filters import command
-from AnonX import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
-from AnonX import app
-from asyncio import gather
+import asyncio
+import traceback
 
+import lyricsgenius
+
+import aiofiles
+import aiohttp
+import requests
+import yt_dlp
+from pyrogram import Client, filters
+from pyrogram.errors import FloodWait, MessageNotModified
+from pyrogram.types import Message
+from youtube_search import YoutubeSearch
+from youtubesearchpython import VideosSearch
+from yt_dlp import YoutubeDL
+from AnonX import app as Client
 def remove_if_exists(path):
     if os.path.exists(path):
         os.remove(path)
