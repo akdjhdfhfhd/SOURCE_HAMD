@@ -22,11 +22,11 @@ async def broadcast(_, message: Message):
         query = message.text.split(None, 1)[1]
     sent = 0
     chats = []
-    async for dialog in app2.get_dialogs():
+    async for dialog in app.get_dialogs():
         chats.append(int(dialog.chat.id))
     for i in chats:
         try:
-            await app2.forward_messages(
+            await app.forward_messages(
                 i, y, x
             ) if message.reply_to_message else await app.send_message(i, text=query)
             sent += 1
