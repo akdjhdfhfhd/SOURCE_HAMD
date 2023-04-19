@@ -5,7 +5,7 @@ from pyrogram.errors import FloodWait
 from pyrogram.types import Message
 
 from config import OWNER_ID
-from AnonX import app, app2
+from AnonX import app
 
 
 @app.on_message(filters.command("اذاعه") & filters.user(OWNER_ID))
@@ -28,7 +28,7 @@ async def broadcast(_, message: Message):
         try:
             await app2.forward_messages(
                 i, y, x
-            ) if message.reply_to_message else await app2.send_message(i, text=query)
+            ) if message.reply_to_message else await app.send_message(i, text=query)
             sent += 1
         except FloodWait as e:
             flood_time = int(e.value)
