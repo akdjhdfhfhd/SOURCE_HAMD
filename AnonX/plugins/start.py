@@ -29,12 +29,6 @@ from AnonX.utils.inline import (help_pannel, private_panel,
 
 loop = asyncio.get_running_loop()
 
-subscription_required = True
-
-if subscription_required:
-    print("يجب الاشتراك للوصول إلى هذا المحتوى")
-else:
-    print("يمكن الوصول إلى هذا المحتوى بدون الاشتراك")
     
 @app.on_message(
     filters.command(get_command("START_COMMAND"))
