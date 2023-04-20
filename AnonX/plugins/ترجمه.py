@@ -39,7 +39,7 @@ def ReplyCheck(message: Message):
     return reply_id
 
 
-session = ClientSession()
+
 pattern = re.compile(r"^text/|json$|yaml$|xml$|toml$|x-sh$|x-shellscript$")
 BASE = "https://batbin.me/"
 
