@@ -36,11 +36,11 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text=_["PL_B_2"],
+                text=_["P_B_2"],
                 callback_data=f"add_playlist {videoid}",
             ),
             InlineKeyboardButton(
-                text=_["PL_B_3"],
+                text=_["P_B_3"],
                 callback_data=f"PanelMarkup {videoid}|{chat_id}",
             )
         ],
@@ -59,11 +59,11 @@ def telegram_markup_timer(_, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text=_["PL_B_2"],
+                text=_["P_B_2"],
                 callback_data=f"add_playlist {videoid}",
             ),
             InlineKeyboardButton(
-                text=_["PL_B_3"],
+                text=_["P_B_3"],
                 callback_data=f"PanelMarkup None|{chat_id}",
             )
         ],
@@ -78,11 +78,11 @@ def stream_markup(_, videoid, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["PL_B_2"],
+                text=_["P_B_2"],
                 callback_data=f"add_playlist {videoid}",
             ),
             InlineKeyboardButton(
-                text=_["PL_B_3"],
+                text=_["P_B_3"],
                 callback_data=f"PanelMarkup None|{chat_id}",
             )
         ],
@@ -94,7 +94,7 @@ def telegram_markup(_, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["PL_B_3"],
+                text=_["P_B_3"],
                 callback_data=f"PanelMarkup None|{chat_id}",
             ),
             InlineKeyboardButton(text=_["CLOSEMENU_BUTTON"], callback_data="close"),
@@ -234,7 +234,7 @@ def panel_markup_1(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text=_["PL_B_2"],
+                text=_["P_B_2"],
                 callback_data=f"add_playlist {videoid}",
             ),
             InlineKeyboardButton(
