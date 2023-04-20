@@ -40,9 +40,6 @@ def ReplyCheck(message: Message):
 
 
 
-pattern = re.compile(r"^text/|json$|yaml$|xml$|toml$|x-sh$|x-shellscript$")
-BASE = "https://batbin.me/"
-
 async def post(url: str, *args, **kwargs):
     async with session.post(url, *args, **kwargs) as resp:
         try:
