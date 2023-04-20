@@ -1,18 +1,9 @@
-# Dev : https://t me/YY8GG
-#Group : https://t.me/YaFaGr
-import requests
+import asyncio
+from pyrogram import Client, filters
+from strings import get_command
 from strings.filters import command
-from gpytranslate import Translator
-from pyrogram.types import Message, User
-from aiohttp import ClientSession
-from pyrogram import filters, Client
-import re
-from pyrogram.types import (InlineKeyboardButton,
-                            InlineKeyboardMarkup, Message)
-from telegraph import upload_file
-from traceback import format_exc
+from pyrogram.types import Message
 from AnonX import app
-
 
 @app.on_message(command(["ترجمة","/tr"]))
 async def tr(_, message):
