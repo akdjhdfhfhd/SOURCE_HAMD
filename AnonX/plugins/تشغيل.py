@@ -36,7 +36,9 @@ async def cr_source(client: Client, message: Message):
     )
 
     
-@app.on_message(command("gr")
+@app.on_message(
+    command("gr")
+) 
 async def cr_usage(_, callback_query: CallbackQuery):
     await callback_query.answer()
     await callback_query.message.edit_text(
@@ -78,7 +80,9 @@ async def cr_usage(_, callback_query: CallbackQuery):
         )
     )
 
-@app.on_message(command("ch")
+@app.on_message(
+    command("ch")
+) 
 async def cr_usage(_, callback_query: CallbackQuery):
     await callback_query.answer()
     await callback_query.message.edit_text(
@@ -104,7 +108,9 @@ async def cr_usage(_, callback_query: CallbackQuery):
         )
     )
 
-@app.on_message(command("admin")
+@app.on_message(
+    command("admin")
+) 
 async def cr_usage(_, callback_query: CallbackQuery):
     await callback_query.answer()
     await callback_query.message.edit_text(
