@@ -73,7 +73,7 @@ async def cr_back(_, callback_query: CallbackQuery):
   
     await message.edit_reply_markup(reply_markup=InlineKeyboardMarkup(
         [
-            [InlineKeyboardButton("طريقة الإستخدام", callback_data="sr")],
+            [InlineKeyboardButton("طريقة الإستخدام", callback_data="usage")],
             [InlineKeyboardButton("𝑌.𝑂²¹ ͢͢➛ℍ𝗺!ِٰ𝗱♪", url=f"https://t.me/ah_2_v"),
              InlineKeyboardButton("قناة البوت", url=f"https://t.me/ah07v")],
             [InlineKeyboardButton("𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳", url=f"https://t.me/ah05v")],
