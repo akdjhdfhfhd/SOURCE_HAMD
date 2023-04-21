@@ -15,7 +15,7 @@ STATS_COMMAND : ["stats"]
 LANGUAGE_COMMAND : ["lang", "language", "langs", "لغه", "اللغه"]
 
 # Play Commands
-PLAY_COMMAND : ["play", "vplay", "cplay", "/cvplay", "playforce", "vplayforce", "cplayforce", "cvplayforce", "حمد شغل" , "فيديو", "#تشغيل", "/play", "/vplay", "cplay", "cvplay", "/تشغيل", "/ق تشغيل", "/ق شغل", "/فيديو", "تشغيل/", "حمد شغلي", "فيديو", "#فديو", "فديو","سورة","سوره"]
+PLAY_COMMAND : ["play", "vplay", "cplay", "/cvplay", "playforce", "vplayforce", "cplayforce", "cvplayforce", "حمد شغل" , "فيديو", "تشغيل", "/play", "/vplay", "cplay", "cvplay", "/تشغيل", "/ق تشغيل", "/ق شغل", "/فيديو", "تشغيل/", "حمد شغلي", "فيديو", "#فديو", "فديو","سورة","سوره"]
 PLAY_COMMAND_chh : ["حمد شغل", "ق" , "شغل", "حمد", "قناه","/", ".","فيديو"]
 STOP_COMMAND_chh : ["ايقاف","حمد ايقاف","كافي"]
 PLAYMODE_COMMAND : ["playmode", "/وضع التشغيل", "وضع شغل", "/playmode"]
