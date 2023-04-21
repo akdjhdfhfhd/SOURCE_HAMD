@@ -21,19 +21,10 @@ from pyrogram.errors import MessageNotModified
 async def cr_source(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://telegra.ph/file/e40829180343a484855a9.jpg",
-        caption=f"""**★⊷⧼𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳⧽⊶★**\nمرحبا بك عزيزي {message.from_user.mention}\nهذا قسم الاوامر الخاص بسورس حمد \nلمعرفة الاوامر اضغط على الأزرار بالأسفل👇\n**★⊷⧼𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳⧽⊶★**""",
+        caption=f"""**★⊷⧼𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳⧽⊶★**\nمرحبا بك عزيزي {message.from_user.mention}\nهذا قسم الاوامر الخاص بسورس حمد \nلمعرفة الاوامر اختار ما تريد👇\n ◉︙اوامر المجموعات ↫ /gr \n ◉︙اوامر القنوات ↫ /ch \n ◉︙ اوامر الادمن ↫ /admin\n**★⊷⧼𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳⧽⊶★**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(
-                        "اوامر الجروبات", callback_data="gr"),
-                    InlineKeyboardButton(
-                        "اوامر القنوات", callback_data="ch"),  
-                 ],[
-                    InlineKeyboardButton(
-                        "اوامر الادمن", callback_data="adm"), 
-                ],[
-                
                     InlineKeyboardButton(
                         "𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳", url=f"https://t.me/ah05v"),
                 ],
@@ -45,7 +36,9 @@ async def cr_source(client: Client, message: Message):
     )
 
     
-@app.on_callback_query(filters.regex("gr"))
+@app.on_message(
+    command("/gr")
+) 
 async def cr_usage(_, callback_query: CallbackQuery):
     await callback_query.answer()
     await callback_query.message.edit_text(
@@ -80,18 +73,16 @@ async def cr_usage(_, callback_query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        "التالي", callback_data="ch"), 
-                    
-                ],[
-                    InlineKeyboardButton(
-                        "الرئيسية", callback_data="back"), 
+                        "𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳", url=f"https://t.me/ah05v"),
                     
                 ]
             ]
         )
     )
 
-@app.on_callback_query(filters.regex("ch"))
+@app.on_message(
+    command("/ch")
+)
 async def cr_usage(_, callback_query: CallbackQuery):
     await callback_query.answer()
     await callback_query.message.edit_text(
@@ -110,19 +101,16 @@ async def cr_usage(_, callback_query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        "التالي", callback_data="adm"), 
-                    InlineKeyboardButton(
-                        "العودة", callback_data="gr"), 
-                ],[
-                    InlineKeyboardButton(
-                        "الرئيسية", callback_data="back"), 
+                        "𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳", url=f"https://t.me/ah05v"),
                     
                 ]
             ]
         )
     )
 
-@app.on_callback_query(filters.regex("adm"))
+@app.on_message(
+    command("/admin")
+)
 async def cr_usage(_, callback_query: CallbackQuery):
     await callback_query.answer()
     await callback_query.message.edit_text(
@@ -169,12 +157,7 @@ async def cr_usage(_, callback_query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        "التالي", callback_data="gr"), 
-                    InlineKeyboardButton(
-                        "العودة", callback_data="ch"), 
-                ],[
-                    InlineKeyboardButton(
-                        "الرئيسية", callback_data="back"), 
+                        "𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳", url=f"https://t.me/ah05v"),
                     
                 ]
             ]
@@ -186,19 +169,10 @@ async def cr_usage(_, callback_query: CallbackQuery):
 async def cr_back(_, callback_query: CallbackQuery):
     await message.reply_photo(
         photo=f"https://telegra.ph/file/e40829180343a484855a9.jpg",
-        caption=f"""**★⊷⧼𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳⧽⊶★**\nمرحبا بك عزيزي {message.from_user.mention}\nهذا قسم الاوامر الخاص بسورس حمد \nلمعرفة الاوامر اضغط على الأزرار بالأسفل👇\n**★⊷⧼𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳⧽⊶★**""",
+        caption=f"""**★⊷⧼𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳⧽⊶★**\nمرحبا بك عزيزي {message.from_user.mention}\nهذا قسم الاوامر الخاص بسورس حمد \nلمعرفة الاوامر اختار ما تريد👇\n ◉︙اوامر المجموعات ↫ /gr \n ◉︙اوامر القنوات ↫ /ch \n ◉︙ اوامر الادمن ↫ /admin\n**★⊷⧼𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳⧽⊶★**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(
-                        "اوامر الكروبات", callback_data="gr"),
-                    InlineKeyboardButton(
-                        "اوامر القنوات", callback_data="ch"),  
-                 ],[
-                    InlineKeyboardButton(
-                        "اوامر الادمن", callback_data="adm"), 
-                ],[
-                
                     InlineKeyboardButton(
                         "𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳", url=f"https://t.me/ah05v"),
                 ],
