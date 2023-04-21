@@ -1,22 +1,21 @@
 import asyncio
-import os
-from pyrogram.types import CallbackQuery
-from AnonX import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
-from AnonX import app
-import requests
-import pyrogram
-from pyrogram import Client, emoji 
-from config import *
+import config
+from pyrogram import Client, filters
 from pyrogram import filters
+from strings import get_command
 from strings.filters import command
+from AnonX import app
 from config import OWNER_ID
-from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, ReplyKeyboardMarkup
-from pyrogram.errors import MessageNotModified
+from AnonX.misc import SUDOERS
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message, ReplyKeyboardMarkup
+from pyrogram.types import (InlineKeyboardButton,CallbackQuery,InlineKeyboardMarkup, Message)
+from AnonX import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
+from AnonX.misc import SUDOERS
 
 
 
 @app.on_message(
-    command("gr")
+    command("/gr")
 ) 
 async def cr_usage(_, callback_query: CallbackQuery):
     await callback_query.answer()
