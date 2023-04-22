@@ -23,58 +23,28 @@ def help_pannel(_, START: Union[bool, int] = None):
         [
             [
                 InlineKeyboardButton(
-                    text="المشرف",
+                    text="⚡ اوامر التشغيل ⚡",
                     callback_data="help_callback hb1",
                 ),
                 InlineKeyboardButton(
-                    text="منشئ",
+                    text="⚡ اوامر المشرفين ⚡",
                     callback_data="help_callback hb2",
                 ),
+            ],
+            [
                 InlineKeyboardButton(
-                    text="blacklist",
+                    text="⚡ اوامر اضافية ⚡",
                     callback_data="help_callback hb3",
                 ),
-            ],
-            [
                 InlineKeyboardButton(
-                    text="الإذاعة",
+                    text="⚡ اوامر اخرى ⚡",
                     callback_data="help_callback hb4",
                 ),
+            ],
+            [
                 InlineKeyboardButton(
-                    text="الحظر",
+                    text="⚡ اوامر المطورين ⚡",
                     callback_data="help_callback hb12",
-                ),
-                InlineKeyboardButton(
-                    text="المطورين",
-                    callback_data="help_callback hb5",
-                ),
-            ],
-            [
-                InlineKeyboardButton(
-                    text="بينج",
-                    callback_data="help_callback hb7",
-                ),
-                InlineKeyboardButton(
-                    text="التشغيل",
-                    callback_data="help_callback hb8",
-                ),
-                InlineKeyboardButton(
-                    text="playlist",
-                    callback_data="help_callback hb6",
-                ),
-            ],
-            [
-                InlineKeyboardButton(
-                    text="ᴠɪᴅᴇᴏᴄʜᴀᴛs",
-                    callback_data="help_callback hb10",
-                ),
-                InlineKeyboardButton(
-                    text="sᴛᴀʀᴛ",
-                    callback_data="help_callback hb11",
-                ),
-                InlineKeyboardButton(
-                    text="البوت",
-                    callback_data="help_callback hb9",
                 ),
             ],
             mark,
